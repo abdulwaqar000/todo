@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>TO-DO WEB APPLICATION</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+<body>
+
+    <div class="outer-body">
+
+
+        <div id="details">
+
+            <h1>TO-DO DETAILS</h1>
+
+            <label for="title-detail">TO-DO TITLE </label>
+            <input type="text" id="title-detail" readonly>
+
+            <label for="desc-detail">TO-DO DESCRIPTION </label>
+            <textarea id="desc-detail" readonly></textarea>
+
+            <button id="btndel">DELETE</button>
+            <button id="btnedit">EDIT</button>
+
+            <button id="backbtn">BACK</button>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="main" id="main">
+
+
+            <h2><span>TO</span>-<span>DO</span> <br> <span>APPLICATION</span></h2>
+
+            <div class="adding">
+
+                <div class="item-input">
+
+                    <input type="text" id="item-title" placeholder="Enter TO-DO Title">
+
+                    <textarea id="item-desc" placeholder="Enter TO-DO Description"></textarea>
+
+                </div>
+
+                <div class="item-add">
+
+                    <img onclick="addItem()" src="images/add-icon.png" width="40px" height="40px" alt="">
+
+                </div>
+
+
+            </div>
+
+
+            <div class="list">
+
+                <ol id="item-list">
+
+
+
+                </ol>
+
+
+            </div>
+
+
+            <div id="removebtn">
+
+                <figure onclick="removeAll()">
+                    <img src="images/removeicon.png" alt="" width="80px" height="50px">
+                    <figcaption id="caption">REMOVE</figcaption>
+
+                </figure>
+            </div>
+
+
+
+            <div class="footer">
+                <h4>CREATED BY -> ABDUL WAQAR</h4>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
